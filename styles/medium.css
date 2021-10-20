@@ -1,0 +1,163 @@
+
+
+/* Medium header */
+.main-head-med{
+  display:grid;
+  grid-area: header2;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: auto auto auto;
+  padding-top: 30px;
+  border-top: solid black;
+  justify-items: center;
+  grid-template-areas:
+    ". h2a ."
+    "h2b .  h2c"
+    ". h2d .";
+}
+
+
+.brand-med {
+  grid-area: h2a;
+  align-self: center;
+  justify-self: center;
+}
+
+.brand-med img {
+  height: auto;
+  width: 250px;
+}
+
+.cart-med {
+  grid-area: h2b;
+  align-self: center;
+  justify-self: left;
+}
+
+.cart-med img {
+  width: 40px;
+}
+
+.social-head-med {
+  grid-area: h2c;
+  align-self:center;
+  justify-self:right;
+}
+
+/*
+   Social media links - Header
+*/
+
+.social-head-med {
+  display:flex;
+  flex-wrap: nowrap;
+  align-self:center;
+  justify-self: right;
+}
+
+.social-head-med > div {
+width: 25%;
+margin: auto;
+padding: 5px;
+}
+
+.bi{
+font-size: 14px; color: black;
+}
+
+/* When footer_area_a hovered over change opacity of all .bi*/
+.social-head-med:hover .bi{
+opacity: 0.2;
+}
+
+/* Select every .bi:hover in footer_area_a and change its opacity to 1.0 */
+.social-head-med .bi:hover, .bi{
+opacity: 1.0;
+}
+
+
+/*
+  Navigation bar
+*/
+.topnav-med {
+  grid-area: h2d;
+}
+
+.topnav-med {
+  background-color: white;
+  overflow: hidden;
+  font-family: europa, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+
+/* Style the links inside the navigation bar */
+.topnav-med a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 0 12px 0 12px ;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* Change the color of links on hover */
+.topnav-med a:hover {
+  color: black;
+  opacity: 0.6;
+}
+
+/* The dropdown container */
+.dropdown-med {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown-med .dropbtn {
+  font-size: 14px;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 0 12px 0 12px ;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a black background color to navbar links on hover */
+.topnav-med a:hover, .dropdown-med:hover .dropbtn {
+  color: black;
+  opacity: 0.6;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  padding-top: 10px;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 3px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a black background color to dropdown links on hover */
+.dropdown-content a:hover {
+  color: black;
+  opacity: 0.6;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown-med:hover .dropdown-content {
+  display: block;
+}

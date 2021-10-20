@@ -1,0 +1,361 @@
+/* Import external CSS files*/
+@import "footer.css";
+@import "small.css";
+@import "medium.css";
+@import "blog.css";
+@import "about.css";
+
+/* Universal properties */
+* {
+  background-color: white;
+  box-sizing: border-box;
+}
+
+/* Body properties */
+body{
+    margin:0;
+    padding: 0;
+}
+
+/* Wrapper for main page layout */
+.wrapper{
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.blog-wrapper{
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+
+
+/* Style text for footer */
+.datetext {
+  width: 100%;
+  padding: 0;
+  text-align: center;
+  vertical-align: top;
+  font-family:'Crimson Text';
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(17, 17, 17, 0.5);
+}
+
+.italic-span {
+  font-style: italic;
+}
+
+.bold-span {
+  font-weight: bold;
+}
+
+.underline-span {
+  text-decoration: underline;
+}
+
+
+
+/* Content */
+.content {
+  grid-area: content;
+  display: grid;
+  margin-top: 25px;
+  width: 100%;
+  grid-template-areas:
+              "aa"
+              "bb"
+              "cc"  ;
+}
+
+
+.content img {
+  padding: 10px;
+  margin: auto;
+  width: 100%;
+}
+
+.youtube-banner {
+  grid-area: aa;
+}
+
+.blog-banner {
+  grid-area: bb;
+}
+
+.merch-banner {
+  grid-area: cc;
+}
+
+/* Define text in articles */
+article > p{
+  font-family: 'Bodoni Moda', serif;
+  font-size: 28px;
+  font-weight: 400;
+  padding-top: 40px;
+  text-align: center;
+  line-height: 1.3em;
+}
+
+/* Blog links in main page */
+.blog {
+  grid-area: blog;
+}
+
+.blog-container .row {
+  display: flex;
+}
+
+/* Create two equal columns that sits next to each other */
+.blog-container .column {
+  width: 50%;
+}
+
+.blog-container figure {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  padding: 5px;
+  justify-content:space-between;
+}
+
+.blog-container img {
+  width: 100%;
+  height: 35vh;
+  object-fit: cover;
+}
+
+.blog-container figcaption {
+  font-family: Crimson Text;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 400;
+  padding-top: 5px;
+  text-align: center;
+  letter-spacing: .02em;
+  line-height: 1.5em;
+}
+
+
+
+/* Remove background colour from link */
+p a, p a:link, p a:visited, p a:hover, p a:active {
+  text-decoration: none;
+  color: #333;
+}
+
+ /* Two table column width */
+ .column {
+  box-sizing: border-box;
+  justify-items: center;
+  align-items: center;
+  width: 25%;
+}
+
+
+/* Vlog */
+.vlog {
+  grid-area: vlog;
+}
+
+.vlog img {
+  width: 100%;
+}
+
+/* Merch */
+.merch {
+  grid-area: merch;
+}
+
+.merch-container .row {
+  display: flex;
+}
+
+/* Create two equal columns that sits next to each other */
+.merch-container .column {
+  width: 50%;
+}
+
+.merch-container figure {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  padding: 5px;
+  justify-content:space-between;
+}
+
+.merch-container img {
+  width:100%;
+  height: 35vh;
+  object-fit: cover;
+}
+
+.merch-container figcaption {
+  font-family: Crimson Text;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 400;
+  padding-top: 10px;
+  text-align: center;
+  letter-spacing: .02em;
+  line-height: 1.5em;
+}
+
+/* Instagram */
+.insta {
+  grid-area: insta;
+}
+
+.insta-container {
+  display: flex;
+  overflow-x: auto;
+}
+
+.insta-container a {
+  display: contents;  /* Makes the container (a) disappear. Child elements move up */
+}
+
+
+.insta-container img {
+  margin-right: 15px;
+  height: 250px;
+  width: 100%;
+}
+
+.mainfooter {
+  grid-area: footer;
+}
+
+/* Mobile view formatting */
+
+/* Wrapper for main page */
+.wrapper {
+  display: grid;
+  width: 100%;
+  gap: 20px;
+  grid-template-areas:
+    "header1"
+    "content"
+    "blog"
+    "vlog"
+    "merch"
+    "insta"
+    "footer";
+}
+
+/*No display medium header*/
+.main-head-med {
+  display: none;
+}
+
+.main-head-small {
+  display: grid;
+}
+
+/* No display for medium vlog image */
+.vlog-image-med {
+  display: none;
+}
+
+.vlog-image-small {
+  display: block;
+}
+
+
+
+@media (min-width: 600px) {
+
+  /* Merch flexbox - four columns */
+  .merch .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+    height: auto;
+  }
+
+  /* Blog flexbox for mainpage - four columns */
+  .blog .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+    height: auto;
+  }
+
+  /* Images in content section */
+  .youtube-banner img {
+    padding: 10px;
+    margin: auto;
+    width: 100%;
+  }
+
+  .blog-banner img {
+    padding: 10px;
+    margin: auto;
+    width: 100%;
+  }
+
+  .merch-banner img {
+    padding: 10px;
+    margin: auto;
+    width: 100%;
+  }
+
+
+  /* Content section - Main page */
+  .content {
+    grid-area: content;
+    display: grid;
+    margin-top: 0;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:
+                "aa bb"
+                "aa cc" ;
+  }
+  /* Main wrapper */
+  .wrapper {
+    display: grid;
+    width: 100%;
+    gap: 20px;
+    grid-template-areas:
+      "header2"
+      "content"
+      "blog"
+      "vlog"
+      "merch"
+      "insta"
+      "footer";
+  }
+
+  /* Activate Header for Medium display*/
+  .main-head-med{
+    display: grid;
+  }
+
+  /* Disable header for small display */
+  .main-head-small{
+    display:none;
+  }
+
+  /* Show vlog for medium and large display */
+  .vlog-image-med {
+    display: block;
+  }
+
+  .vlog-image-small {
+    display: none;
+  }
+
+}
+
+@media (min-width: 768px) {
+
+  /* Main page - styling */
+  .wrapper{
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+}

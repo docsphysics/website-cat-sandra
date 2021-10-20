@@ -1,0 +1,233 @@
+
+
+/* About page - Styling */
+
+.about-article-wrapper {
+  display: flex;
+  align-items: top;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding: 20px 5% 20px 5%;
+}
+
+#link-contact {
+  color: white;
+  text-decoration: underline;
+}
+
+.about-image {
+  width: 50%;
+}
+
+.about-image img {
+  display: block;
+  width: 100%;
+}
+
+.about-text-overlay{
+  display: block;
+  padding: 5px;
+  width: 50%;
+  background-color:black;
+  color: white;
+}
+
+.about-text-overlay * {
+  color: white;
+  background-color: transparent;
+  font-family:'Crimson Text';
+  text-align: left;
+  font-weight: 400;
+}
+
+.about-article-wrapper h1{
+  font-size: 2rem;
+}
+
+.about-article-wrapper h2{
+  font-size: 1.5rem;
+  line-height:normal;
+}
+
+.about-article-wrapper p{
+  font-size: 1.2rem;
+}
+
+.about-article-wrapper {
+    grid-area: about-article;
+  }
+
+.about-wrapper {
+    display: grid;
+    width: 100%;
+    gap: 20px;
+    grid-template-areas:
+      "header1"
+      "about-article"
+      "footer";
+  }
+
+/* My team page - styling */
+.myteam-card-wrapper {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  padding: 2%;
+  overflow: hidden;
+}
+
+.myteam-card {
+  /* Add shadows to create the "card" effect */
+  display: block;
+  width: 50%;
+  text-align: center;
+  background-color: transparent;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+
+.myteam-card img {
+  margin-top: 10%;
+  width: 80%;
+  height: 65vh;
+  object-fit: cover;
+}
+  /* On mouse-over, add a deeper shadow */
+  .myteam-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  /* Add some padding inside the card container */
+  .myteam-container {
+  padding: 2px 16px;
+  }
+
+  .myteam-card-wrapper {
+    grid-area: card-wrapper;
+}
+
+  .myteam-wrapper {
+    display: grid;
+    width: 100%;
+    padding: 5%;
+    margin: auto;
+    gap: 20px;
+    grid-template-areas:
+      "header1"
+      "card-wrapper"
+      "footer";
+  }
+
+
+
+/* Adjust for screen size */
+@media (min-width: 600px) {
+
+  .about-article-wrapper {
+    display: flex;
+    align-items: top;
+    width: 100%;
+    padding: 20px 5% 20px 5%;
+  }
+
+  #link-contact {
+    color: white;
+    text-decoration: underline;
+  }
+
+  .about-image {
+    width: 50%;
+  }
+
+  .about-image img {
+    display: block;
+    width: 100%;
+  }
+
+  .about-text-overlay{
+    display: block;
+    position: relative;
+    z-index: 0;
+    padding: 20px;
+    right: 25px;
+    width: 50%;
+    background-color:black;
+    opacity: 80%;
+    color: white;
+  }
+
+  .about-article-wrapper h1{
+    font-size: 2.5rem;
+  }
+
+  .about-article-wrapper h2{
+    font-size: 2.0rem;
+    line-height:normal;
+  }
+
+
+  .about-article-wrapper p{
+    font-size: 1.6rem;
+  }
+
+  .about-article-wrapper {
+    grid-area: about-article;
+  }
+
+  .about-article-wrapper {
+    display: flex;
+    align-items: top;
+    width: 100%;
+    padding: 20px 5% 20px 5%;
+  }
+
+
+  .about-wrapper {
+    display: grid;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    gap: 20px;
+    grid-template-areas:
+      "header2"
+      "about-article"
+      "footer";
+  }
+
+  .myteam-wrapper {
+    display: grid;
+    width: 100%;
+    padding: 5px;
+    gap: 20px;
+    grid-template-areas:
+      "header2"
+      "card-wrapper"
+      "footer";
+  }
+
+
+}
+
+@media (min-width: 1000px) {
+
+  .about-wrapper {
+    display: grid;
+    width: 100%;
+    gap: 20px;
+    grid-template-areas:
+      "header2"
+      "about-article"
+      "footer";
+  }
+
+  .myteam-wrapper {
+    display: grid;
+    width: 100%;
+    gap: 20px;
+    grid-template-areas:
+      "header2"
+      "card-wrapper"
+      "footer";
+  }
+
+}

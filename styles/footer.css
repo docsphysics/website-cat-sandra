@@ -1,0 +1,54 @@
+
+.mainfooter {
+  grid-area: footer;
+}
+
+/* Grid for Footer*/
+.gridfooter {
+  display: grid;
+  width: 100%;
+  padding: 20px;
+  grid-template-areas:
+      ". fa ."
+      ". fb .";
+}
+
+/* Social media links footer */
+.sociallinks {
+    display:flex;
+    flex-wrap: nowrap;
+}
+
+.sociallinks {
+  grid-area: fa;
+  align-self:center;
+  justify-self: center;
+}
+
+.sociallinks > div {
+  margin: auto;
+  padding: 5px;
+}
+
+footer .bi{
+  font-size: 20px; color: black;
+}
+
+/* When footer_area_a hovered over change opacity of all .bi*/
+.sociallinks:hover .bi{
+  opacity: 0.2;
+}
+
+/* Select every .bi:hover in footer_area_a and change its opacity to 1.0 */
+.sociallinks .bi:hover, .bi{
+  opacity: 1.0;
+}
+
+/* Copyright */
+.copyright {
+  grid-area: fb;
+  display:flex;
+  align-self:center;
+  justify-self: center;
+}
+

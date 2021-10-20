@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Cat-Sandra</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=1">
+		<meta name="description" content="Cat-Sandra blog">
+		<meta name="keywords" content="Cat, Cat-Sandra, Narcissistic cat, Feline influencer">
+		<meta name="author" content="Cat-Sandra the magnificent">
+
+		<!--Load CSS-->
+		<link rel="stylesheet" href="styles/style.css">
+
+		<!--Fonts for webpage-->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+
+
+		<!-- Inclusion of Bootstrap turns off my Dropdown menus Why The Face?!!!-->
+		<!-- Bootstrap used for Social Icons -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+		<!--JavaScript at end of body for optimized loading-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/materialize.min.js"></script>
+
+		<!--Call my Javascript file-->
+		<script src="script/myScript.js"></script>
+
+</head>
+
+	<body>
+	<!--Main wrapper for page layout-->
+	<div class="blog-wrapper">
+
+		<!--Header for small devices - 1 x 3 grid -->
+		<header class="main-head-small">
+			<div class="brand-small">
+				<a href="index.html"><img src="images/CatSandra.JPG" alt="Cat-Sandra title">
+				</a>
+			</div>
+
+			<div class="cart-small">
+				<a href="#"><img src="images/shopping_cart.PNG" alt="Shopping cart">
+				</a>
+			</div>
+
+			<!--Navigation menu for small header-->
+			<div class="topnav-small">
+				<div id="mySidepanel" class="sidepanel">
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+					<!--Small menu items-->
+					<div class="dropdown-small">
+						<button class="dropbtn"> BLOG </button>
+						<div class="dropdown-content">
+							<a href="blog.html">LIFESTYLE</a>
+							<a href="#">FASHION</a>
+						  <a href="#">TRAVEL</a>
+						</div>
+					</div>
+
+					<a href="https://www.youtube.com/c/FunnyCatsHDYT/featured" target="_blank">VIDEO</a>
+
+					<div class="dropdown-small">
+						<button class="dropbtn"> SHOP </button>
+						<div class="dropdown-content">
+						  <a href="#">MERCH</a>
+						  <a href="#">AMAZON</a>
+						  <a href="#">POSHMARK</a>
+						</div>
+					</div>
+
+					<div class="dropdown-small">
+						<button class="dropbtn"> INFO </button>
+						<div class="dropdown-content">
+						  <a href="about.html">ABOUT</a>
+						  <a href="myteam.html">MY TEAM</a>
+						  <a href="#">SUBSCRIBE</a>
+						</div>
+					</div>
+				</div>
+				<button class="openbtn" onclick="openNav()">&#9776;</button>
+			</div>
+		</header>
+
+
+		<!--Header for medium and large devices - 3 x 3 grid -->
+		<header class="main-head-med">
+			<div class="brand-med">
+				<a href="index.html"><img src="images/CatSandra.JPG" alt="Cat-Sandra title">
+				</a>
+			</div>
+
+			<div class="cart-med">
+				<a href="#"><img src="images/shopping_cart.PNG" alt="Shopping cart">
+				</a>
+			</div>
+
+			<!-- Social links for medium header -->
+			<div class="social-head-med">
+				<div>
+					<a href="https://www.youtube.com/c/FunnyCatsHDYT/featured" target="_blank"><i class="bi bi-youtube"></i></a>
+				</div>
+				<div>
+					<a href = "https://www.instagram.com/cats_of_instagram/" target="_blank"><i class="bi bi-instagram"></i></a>
+				</div>
+				<div>
+					<a href = "javascript:void(0)"><i class="bi bi-facebook"></i></a>
+				</div>
+				<div>
+					<a href = "javascript:void(0)"><i class="bi bi-twitter"></i></a>
+				</div>
+				<div>
+					<a href = "javascript:void(0)"><i class="bi bi-github"></i></a>
+				</div>
+			</div>
+
+			<!--Navigation menu for medium header-->
+			<div class="topnav-med">
+				<div class="dropdown-med">
+					<button class="dropbtn"> BLOG </button>
+					<div class="dropdown-content">
+					  <a href="blog.html">LIFESTYLE</a>
+					  <a href="#">FASHION</a>
+					  <a href="#">TRAVEL</a>
+					</div>
+				</div>
+
+				<a href="https://www.youtube.com/c/FunnyCatsHDYT/featured" target="_blank">VIDEO</a>
+
+				<div class="dropdown-med">
+					<button class="dropbtn"> SHOP </button>
+					<div class="dropdown-content">
+					  <a href="#">MERCH</a>
+					  <a href="#">AMAZON</a>
+					  <a href="#">POSHMARK</a>
+					</div>
+				</div>
+
+				<div class="dropdown-med">
+					<button class="dropbtn"> INFO </button>
+					<div class="dropdown-content">
+					  <a href="about.html">ABOUT</a>
+					  <a href="myteam.html">MY TEAM</a>
+					  <a href="#">SUBSCRIBE</a>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<article class="blog-article">
+            <h1> I bought a house! Again! </h1>
+
+            <img class="blog-title-image" src="images/cat-castle.jpg" alt="I bought a house! Again!">
+
+
+            <h2><em>Hello blog fam, long time no see! Definitely been neglecting you a bit recently but had some serious amazing happening in my life! Let me cat-ch you up!             </em>
+			</h2>
+
+			<p>
+                Early this year I decided that my old-school fuzzy igloo just wasn't cutting it. It was great when I first moved in but I didn't intend on using it except for sleeping. But it turns out I'm a serious home-body. Especially this year with my human at home all the time requiring my supervision, lol.
+			</p>
+
+			<blockquote>"Home is where our story begins..."</blockquote>
+
+			<p>
+                So I started looking at new home options! I quickly realized how many choices were out there so I had to get real and work out my essential criteria - 1) I wasn't kidding about the human requiring supervision, so a home with multiple vantage points for maximum judgement was top of the list; 2) comfort also matters to me - so it had to have built in soft furnishings; 3) it's tough being a public persona so I need a good cave for down time and privacy - safely away from prying eyes and 4) every feline goddess needs to work out her issues from time to time, so some structural scratching posts elements providing maximum rage venting convenience was my top desirable feature!
+            </p>
+			<p>
+                I'm thrilled to say I found the perfect place; a four level furnished apartment that perfectly fits my hygge aesthetic. It was a bit of an assembly job but I outsourced that to the human. And now I'm all moved in and ready to judge from on high. Wish me luck fam!
+            </p>
+		</article>
+
+
+		<footer class="mainfooter">
+			<!--Grid for Footer-->
+			<div class="gridfooter">
+				<!--https://icons.getbootstrap.com/-->
+				<div class="sociallinks">
+					<div>
+						<a href="https://www.youtube.com/c/FunnyCatsHDYT/featured" target="_blank"><i class="bi bi-youtube"></i></a>
+					</div>
+					<div>
+						<a href = "https://www.instagram.com/cats_of_instagram/" target="_blank"><i class="bi bi-instagram"></i></a>
+					</div>
+					<div>
+						<a href = "javascript:void(0)"><i class="bi bi-facebook"></i></a>
+					</div>
+					<div>
+						<a href = "javascript:void(0)"><i class="bi bi-twitter"></i></a>
+					</div>
+					<div>
+						<a href = "javascript:void(0)"><i class="bi bi-github"></i></a>
+					</div>
+				</div>
+
+				<!--Copyright-->
+				<div class="copyright">
+					<p class="datetext"> &copy 2021 CAT-SANDRA <br> </p>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
