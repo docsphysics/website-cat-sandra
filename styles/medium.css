@@ -6,7 +6,7 @@
   grid-area: header2;
   grid-template-columns: 1fr 4fr 1fr;
   grid-template-rows: auto auto auto;
-  padding-top: 30px;
+  padding-top: 7px;
   border-top: solid black;
   justify-items: center;
   grid-template-areas:
@@ -24,7 +24,7 @@
 
 .brand-med img {
   height: auto;
-  width: 250px;
+  width: 300px;
 }
 
 .cart-med {

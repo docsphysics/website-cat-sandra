@@ -208,21 +208,19 @@ p a, p a:link, p a:visited, p a:hover, p a:active {
   grid-area: insta;
 }
 
-.insta-container {
+.insta-container .row {
   display: flex;
-  /*overflow-x: auto;*/
-  overflow: hidden;
-  touch-action: none;
+  align-items: center;
 }
 
-.insta-container a {
-  display: contents;  /* Makes the container (a) disappear. Child elements move up */
+/* Create two equal columns that sits next to each other */
+.insta-container .column {
+  width: 50%;
 }
-
 
 .insta-container img {
-  margin-right: 15px;
-  height: 250px;
+  padding: 10px;
+  height: auto;
   width: 100%;
 }
 
@@ -349,6 +347,12 @@ p a, p a:link, p a:visited, p a:hover, p a:active {
     display: none;
   }
 
+  /* Create two equal columns that sits next to each other */
+  .insta-container .column {
+  width: 33.33%;
+}
+
+
 }
 
 @media (min-width: 768px) {
@@ -359,5 +363,11 @@ p a, p a:link, p a:visited, p a:hover, p a:active {
     padding-left: 10%;
     padding-right: 10%;
   }
+
+  /* Create two equal columns that sits next to each other */
+.insta-container .column {
+  width: 16.66%;
+}
+
 
 }
