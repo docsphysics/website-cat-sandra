@@ -88,8 +88,8 @@
 
 .myteam-card img {
   margin-top: 10%;
-  width: 80%;
-  height: 65vh;
+  width: 35vw;
+  height: 35vw;
   object-fit: cover;
 }
   /* On mouse-over, add a deeper shadow */
@@ -104,7 +104,15 @@
 
   .myteam-card-wrapper {
     grid-area: card-wrapper;
-}
+  }
+
+  .myteam-title {
+    grid-area: title;
+    text-align: center;
+    font-family:'Crimson Text';
+    font-weight: 400;
+    color:black
+  }
 
   .myteam-wrapper {
     display: grid;
@@ -114,6 +122,7 @@
     gap: 20px;
     grid-template-areas:
       "header1"
+      "title"
       "card-wrapper"
       "footer";
   }
@@ -201,6 +210,7 @@
     gap: 20px;
     grid-template-areas:
       "header2"
+      "title"
       "card-wrapper"
       "footer";
   }
@@ -226,6 +236,7 @@
     gap: 20px;
     grid-template-areas:
       "header2"
+      "title"
       "card-wrapper"
       "footer";
   }
